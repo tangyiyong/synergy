@@ -22,15 +22,14 @@
 
 class ZeroconfRegister;
 
-class ZeroconfServer : public QTcpServer
-{
+class ZeroconfServer : public QTcpServer {
     Q_OBJECT
 
 public:
-    ZeroconfServer(QObject* parent = 0);
+    ZeroconfServer (QObject* parent = 0);
 
 protected:
-    void incomingConnection(int socketDescriptor);
+    void incomingConnection (int socketDescriptor);
 
 private:
     QStringList fortunes;
